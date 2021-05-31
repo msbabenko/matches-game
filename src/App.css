@@ -1,38 +1,116 @@
+:root {
+  --color-primary:  #fbf4dc;
+  --color-secondary: #fbabac;
+  --text-color-primary:  #322436;
+  --text-color-secondary: #df4a5b;
+  --matches-color: #e4ab42;
+  --matches-color-hover: #d4a284;
+}
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  padding: 20px;
+  font-family: 'Sigmar One', courier;
+  color: var(--text-color-primary);
+  
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase; 
+  margin: 20px 0 10px 10px; 
+  
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  width: 80%;
+  height: 80%;
+ 
+  
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ScoreBox {
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 10%;
+  background-color: var(--color-secondary);
+  color: var(--text-color-secondary);
+  border-radius: 35px;
+  font-size: 26px;  
+ 
+}
+.Board {
+  
+  height: 15%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  left: 10% ;
+  border: 1px solid  var(--color-secondary);
+  border-radius: 35px;
+  padding: 2%;
+}
+
+.Match {
+  background-color: var(--matches-color);
+  width: 30px;
+  height: 40px;
+  margin: 5px; 
+  border-radius: 90px;
+}
+
+.Match:hover {
+  
+  background-color: var(--text-color-secondary);
+}
+
+.PlayerInfo{
+ 
+ 
+  margin: 5%;
+  padding: 2%;
+
+}
+.TurnBtn {
+  background-color: var(--text-color-secondary);
   color: white;
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 10%;
+  border-radius: 35px;
+  font-size: 26px;  
+  display: inline;
+  float: right;
+  font-family: 'Sigmar One', courier;
 }
 
-.App-link {
-  color: #61dafb;
+.TurnBtn:hover {
+  background-color: var(--color-secondary);
+  color: white;
+ 
+  width: 20%;
+  height: 10%;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ChooseMatches {
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 10%;
+  background-color: var(--color-secondary);
+  color: var(--text-color-secondary);
+  border-radius: 35px;
+  font-size: 26px;  
 }
